@@ -2,7 +2,7 @@
 
 A web application game based on the popular drinking game Kings Cup
 
-![wireframe](/drawio/matthewscup_wireframe.png.png)
+![wireframe](https://github.com/matthewhaotran/matthewscup/blob/master/drawio/matthewcup_wireframe.png?raw=true)
 
 ## How to demo and use
 
