@@ -1,6 +1,8 @@
 # Matthew's Cup
 
-A web application game based on the popular drinking game Kings Cup`
+A web application game based on the popular drinking game Kings Cup
+
+![wireframe](/drawio/matthewscup_wireframe.png.png)
 
 ## How to demo and use
 
@@ -16,6 +18,8 @@ Currently in development
 ## How to play
 1. One player taps the first card to reveal the card
 2. All players follow the mini game until someone loses and has to drink
+3. Once the mini-game is over, the next player taps the card to reveal a new game
+4. Game is over after a pre-determined amount of time, number of cards, or people are drunk
 
 ## License
 [Matthew Tran](https://matthewhaotran.github.io)
