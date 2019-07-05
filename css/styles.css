@@ -1,5 +1,9 @@
-div.card {
+div#card {
     border: solid 1px darkblue;
-    height: 500px;
-    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: table; 
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
 }
