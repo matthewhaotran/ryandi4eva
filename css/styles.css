@@ -7,3 +7,8 @@ div#card {
     width: 400px;
     overflow: hidden;
 }
+
+div#card>div {
+    display: table-cell; 
+    vertical-align: middle;
+}
