@@ -11,4 +11,10 @@ div#card {
 div#card>div {
     display: table-cell; 
     vertical-align: middle;
+    padding: 1rem;
+}
+
+div#cardText > p {
+    color: darkblue;
+    font-size: 2rem;
 }
