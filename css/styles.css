@@ -1,3 +1,4 @@
+/*Main container*/
 div#card {
     border: solid 1px darkblue;
     margin-left: auto;
@@ -8,12 +9,14 @@ div#card {
     overflow: hidden;
 }
 
+/*Center text vertically*/
 div#card>div {
     display: table-cell; 
     vertical-align: middle;
     padding: 1rem;
 }
 
+/*Font for card text*/
 div#cardText > p {
     color: darkblue;
     font-size: 2rem;

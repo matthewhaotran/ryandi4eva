@@ -23,9 +23,7 @@ let miniGames = {
 
 $('#card').click(
     function () {
-        min = Math.ceil(1);
-        max = Math.floor(20);
-        var game = Math.floor(Math.random() * (max - min + 1)) + min;
+        var game = Math.floor(Math.random() * (Math.floor(20) - Math.ceil(1) + 1)) + 1;
         $('#cardText>p').text(miniGames[game]);
     }
 );
