@@ -19,5 +19,11 @@ div#card>div {
 /*Font for card text*/
 div#cardText > p {
     color: darkblue;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+div#kingCount > p{
+    color: red;
+    font-weight: bold;
+    font-size: 1.5em;
 }
