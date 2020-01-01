@@ -12,7 +12,7 @@ let miniGames = {
     11: '3/6/9 - Count and clap on 3/6/9 until somone messes up',
     12: 'Baskin Robbins - Whoever lands on 31 drinks!',
     13: "I'm leaving - Last one left loses!",
-    14: "Give 4 drinks",
+    14: "MATTHEW's CUP",
     15: "Paper Rock Scissors - Play 1v1 against everyone, loser drinks",
     16: "Never have I ever - elimination",
     17: "One time thumbmaster",
