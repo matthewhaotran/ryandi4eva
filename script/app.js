@@ -12,20 +12,25 @@ let miniGames = {
     11: '3/6/9 - Count and clap on 3/6/9 until somone messes up',
     12: 'Baskin Robbins - Whoever lands on 31 drinks!',
     13: "I'm leaving - Last one left loses!",
-    14: "Waterfall - Choose 2 others and play waterfall",
-    15: "Paper Rock Scissors - Play 1v1 against everyone, loser of each match drinks",
+    14: "Give 4 drinks",
+    15: "Paper Rock Scissors - Play 1v1 against everyone, loser drinks",
     16: "Never have I ever - elimination",
     17: "One time thumbmaster",
-    18: "Vikings row!",
-    19: "Nose Goes - Last person to touch the nose drinks!",
+    18: "One time Vikings row!",
+    19: "One Time Nose Goes - Last person to touch the nose drinks!",
     20: "All singles drink!"
 }
 
+var kingCount = 0;
+
 $('#card').click(
     function () {
-        min = Math.ceil(1);
-        max = Math.floor(20);
-        var game = Math.floor(Math.random() * (max - min + 1)) + min;
+        var game = Math.floor(1 + Math.random()*(20 + 1 - 1))
+        console.log(game);
         $('#cardText>p').text(miniGames[game]);
+        if (game === 14) {
+            kingCount++
+            $('#kingCount>p').text(`${kingCount}/4 Kings`);
+        }
     }
 );
