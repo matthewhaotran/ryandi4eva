@@ -32,5 +32,9 @@ $('#card').click(
             kingCount++
             $('#kingCount>p').text(`${kingCount}/4 Kings`);
         }
+        if (kingCount > 3) {
+            $('div#card').css("background-color", "red");
+            $('#cardText>p').text("MATTHEW'S CUP WINNER!");
+        }
     }
 );
