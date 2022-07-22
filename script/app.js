@@ -1,10 +1,10 @@
 let miniGames = {
-    1: 'Me - Take a drink yourself!',
-    2: 'You - Choose someone to drink!',
-    3: 'All girls drink!',
-    4: 'All guys drink!',
-    5: 'Drive: Vroom or Erk',
-    6: 'FLOOR: Last person to touch the floor drinks',
+    1: 'Ryan and Sandi must kiss!',
+    2: 'Kiss someone or take a drink!',
+    3: 'All married people drink!',
+    4: 'Non-married people drink!',
+    5: 'Most sober one drinks!',
+    6: 'Drunkest person gets to assign a drink!',
     7: 'HEAVEN: Last person to point up to the sky drinks',
     8: 'Date:  Choose someone to drink with you the rest of the game',
     9: 'Rhyme: Say rhymes until someone messes up',
@@ -21,20 +21,15 @@ let miniGames = {
     20: "All singles drink!"
 }
 
-var kingCount = 0;
+var kingCount = 20;
+
+console.log(miniGames);
 
 $('#card').click(
     function () {
         var game = Math.floor(1 + Math.random()*(20 + 1 - 1))
-        console.log(game);
         $('#cardText>p').text(miniGames[game]);
-        if (game === 14) {
-            kingCount++
-            $('#kingCount>p').text(`${kingCount}/4 Kings`);
-        }
-        if (kingCount > 3) {
-            $('div#card').css("background-color", "red");
-            $('#cardText>p').text("MATTHEW'S CUP WINNER!");
-        }
+        delete miniGames[game];
+        $('#kingCount>p').text(`${Object.keys(miniGames).length}/20 cards left`);
     }
 );

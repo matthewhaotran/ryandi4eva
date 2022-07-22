@@ -1,8 +1,6 @@
-# Matthew's Cup
+# Ryandi 4eva
 
-A web application game based on the popular drinking game Kings Cup
-
-![wireframe](https://github.com/matthewhaotran/matthewscup/blob/master/drawio/matthewcup_wireframe.png?raw=true)
+A web application game based on the popular drinking game Kings Cup to celebrate Ryan and Sandi
 
 ## How to demo and use
 
