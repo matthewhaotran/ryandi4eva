@@ -1,35 +1,32 @@
-let miniGames = {
-    1: 'Ryan and Sandi must kiss!',
-    2: 'Kiss someone or take a drink!',
-    3: 'All married people drink!',
-    4: 'Non-married people drink!',
-    5: 'Most sober one drinks!',
-    6: 'Drunkest person gets to assign a drink!',
-    7: 'HEAVEN: Last person to point up to the sky drinks',
-    8: 'Date:  Choose someone to drink with you the rest of the game',
-    9: 'Rhyme: Say rhymes until someone messes up',
-    10: 'Categories: Say things in a category until someone messes up',
-    11: '3/6/9 - Count and clap on 3/6/9 until somone messes up',
-    12: 'Baskin Robbins - Whoever lands on 31 drinks!',
-    13: "I'm leaving - Last one left loses!",
-    14: "MATTHEW's CUP",
-    15: "Paper Rock Scissors - Play 1v1 against everyone, loser drinks",
-    16: "Never have I ever - elimination",
-    17: "One time thumbmaster",
-    18: "One time Vikings row!",
-    19: "One Time Nose Goes - Last person to touch the nose drinks!",
-    20: "All singles drink!"
-}
+let miniGames = [
+    'If Ryan and Sandi kiss, everyone else drinks',
+    'Kiss someone or take a drink!',
+    'All married people drink!',
+    'Non-married people drink!',
+    'Most sober one drinks!',
+    'Drunkest person gets to assign a drink!',
+    'HEART! Last person to hold up the heart symbol with your hands drinks',
+    'Temporary Marriage - Chose a drinking mate, and it goes both ways!',
+    'If you\'ve ever thrown up or blacked out at Ryandi\s house, take a drink',
+    'Black and white - lower team drinks',
+    'Choose  person to have a staring contest with, loser drinks',
+    'Play SLIDE with someone, loser drinks',
+    "Thumper!",
+    "Anyone not touching a drink takes a drink",
+    "Eye contact - The first person to make eye contact with you takes a drink"
+];
 
-var kingCount = 20;
-
-console.log(miniGames);
+let originalGameLength = miniGames.length;
+console.log(originalGameLength);
 
 $('#card').click(
     function () {
-        var game = Math.floor(1 + Math.random()*(20 + 1 - 1))
+        var game = Math.floor(Math.random() * miniGames.length);
+        console.log(game);
+        console.log(miniGames.length);
+        console.log(miniGames);
         $('#cardText>p').text(miniGames[game]);
-        delete miniGames[game];
-        $('#kingCount>p').text(`${Object.keys(miniGames).length}/20 cards left`);
+        miniGames.splice(game, 1);
+        $('#kingCount>p').text(`${miniGames.length}/${originalGameLength} cards left`);
     }
 );
