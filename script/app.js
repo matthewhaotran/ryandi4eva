@@ -6,7 +6,7 @@ let miniGames = [
     'Most sober one drinks!',
     'Drunkest person gets to assign a drink!',
     'HEART! Last person to hold up the heart symbol with your hands drinks',
-    'Temporary Marriage - Chose a drinking mate, and it goes both ways!',
+    'Temporary Marriage - Choose a drinking mate, and it goes both ways!',
     'If you\'ve ever thrown up or blacked out at Ryandi\s house, take a drink',
     'Black and white - lower team drinks',
     'Choose  person to have a staring contest with, loser drinks',
@@ -15,12 +15,13 @@ let miniGames = [
     "Anyone not touching a drink takes a drink",
     "Eye contact - The first person to make eye contact with you takes a drink",
     "Categories - Honeymoon Destinations",
-    'Temporary Marriage - Chose a drinking mate, and it goes both ways!',
-    'Ryan gets to chose someone to drink',
+    'Temporary Marriage - Choose a drinking mate, and it goes both ways!',
+    'Ryan gets to choose someone to drink',
     'Sandi gets to choose someone to drink',
     'Drink if you are in the bridal party',
     'Say the name of your first bf/gf or drink',
-    'Pair off! Choose a unclaimed partner and last one or team drinks'
+    'Pair off! Choose a unclaimed partner and last one or team drinks',
+    'Drink if you weren\'t cool enough to be in the bridal party'
 ];
 
 let originalGameLength = miniGames.length;
