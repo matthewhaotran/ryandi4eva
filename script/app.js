@@ -13,7 +13,14 @@ let miniGames = [
     'Play SLIDE with someone, loser drinks',
     "Thumper!",
     "Anyone not touching a drink takes a drink",
-    "Eye contact - The first person to make eye contact with you takes a drink"
+    "Eye contact - The first person to make eye contact with you takes a drink",
+    "Categories - Honeymoon Destinations",
+    'Temporary Marriage - Chose a drinking mate, and it goes both ways!',
+    'Ryan gets to chose someone to drink',
+    'Sandi gets to choose someone to drink',
+    'Drink if you are in the bridal party',
+    'Say the name of your first bf/gf or drink',
+    'Pair off! Choose a unclaimed partner and last one or team drinks'
 ];
 
 let originalGameLength = miniGames.length;
